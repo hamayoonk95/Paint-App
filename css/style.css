@@ -1,0 +1,122 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-family: Helvetica;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	width: 75px;
+	overflow-y: scroll;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	background-color: #fff;
+	margin-bottom: 5px;
+	max-height: 40px;
+	max-width: 40px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+#strokeSlider{
+	margin-top: 10px;
+}
+
+.shapes{
+	background-color: #fff;
+	margin: 0px 5px;
+	display: inline-block;
+}
+
+.colourPalette{
+	grid-area: colourP;
+}
+
+.colorPicker{
+	margin: 50px;
+	width: 100px;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+
+.wrapper {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 70px 230px  minmax(500px, 1fr);
+	grid-template-rows: 35px minmax(500px, 1fr) 160px;
+	grid-template-areas:
+			"header header header"
+			"sidebar content content"
+			"colourP colourP options";
+	background-color: #fff;
+	color: #444;
+}
+
+.box {
+  background-color: black;
+  color: #fff;
+  font-size: 150%;
+}
+
+.header {
+  background-image: url("background.jpg");
+}
+
+
+.help{
+	display: none;
+}
+
+.help.active{
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 15px;
+	display: inline;
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	width: 30%;
+	height: auto;
+	background-color: rgb(0,0,0,0.7);
+}
+
+button {
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 10px;
+  margin: 0px 1px;
+  padding: 10px 5px;
+}
+
+button:hover {
+	background-color: blue;
+	color: #fff;
+}

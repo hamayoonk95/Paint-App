@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/p5.min.js"></script>
+    <script src="js/sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="js/toolbox.js"></script>
+    <script src="js/colourPalette.js"></script>
+    <script src="js/helperFunctions.js"></script>
+
+    <script src="tools/sprayCanTool.js"></script>
+    <script src="tools/textTool.js"></script>
+    <script src="tools/selectTool.js"></script>
+    <script src="tools/shapesTool.js"></script>
+    <script src="tools/freehandTool.js"></script>
+    <script src="tools/lineToTool.js"></script>
+    <script src="tools/mirrorDrawTool.js"></script>
+    <script src="tools/circleTool.js"></script>
+    <script src="tools/ellipseTool.js"></script>
+    <script src="tools/SquareTool.js"></script>
+    <script src="tools/rectTool.js"></script>
+    <script src="tools/eraserTool.js"></script>
+    <script src="tools/bucketTool.js"></script>
+    <script src="tools/triangleTool.js"></script>
+    <script src="tools/starTool.js"></script>
+    <script src="tools/effectsTool.js"></script>
+    <script src="tools/symmetry.js"></script>
+
+    <link rel="icon" href="/assets/icons/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+      <div class="box header">My Drawing App
+
+        <button id="clearButton">Clear</button>
+        <button id="saveImageButton">Save Image</button>
+        <!-- input for uploading images to canvas -->
+        <input type="file" id="fileinput" accept = "image/*">
+        <button id="undoButton">Undo</button>
+        <button id="redoButton">Redo</button>
+        <button id="helpButton">Help</button>
+        
+        <div class="help"></div>
+
+
+      </div>
+      <div class="box" id="sidebar"></div>
+      <div id="content"></div>
+      <div class="box colourPalette"></div>
+      <div id="options" class="box options">
+        <div id="shapesDiv" class="shapesDiv"></div>
+      </div>
+	</div>
+  </body>
+</html>
