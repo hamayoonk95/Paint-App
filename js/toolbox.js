@@ -72,7 +72,6 @@ function Toolbox() {
 					this.selectedTool.addShape(new EllipseTool());
 					this.selectedTool.addShape(new LineToTool);
 					this.selectedTool.addShape(new RectTool());
-					this.selectedTool.addShape(new SquareTool());
 					this.selectedTool.addShape(new StarTool());
 					this.selectedTool.addShape(new TriangleTool());
 				}
